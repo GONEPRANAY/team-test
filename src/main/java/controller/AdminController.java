@@ -1,5 +1,7 @@
 package controller;
 
+import org.springframework.stereotype.Controller;
+	
 import java.util.List;
 
 import org.hibernate.Criteria;

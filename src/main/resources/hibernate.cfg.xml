@@ -13,7 +13,7 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-
+        <mapping class="dao.AccountDao" />
         <mapping class="com.pojos.AdminReg" />
     </session-factory>
 </hibernate-configuration>
