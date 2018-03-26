@@ -4,9 +4,7 @@
   <artifactId>Shoping_cart</artifactId>
   <version>1</version>
   <packaging>war</packaging>
-  <dependencies>
- <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-  <properties>
+ <properties>
 		<spring.version>3.2.13.RELEASE</spring.version>
 	</properties>
 	<dependencies>
@@ -63,6 +61,8 @@
     <scope>provided</scope>
 </dependency>
 
+		
+
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
@@ -102,16 +102,6 @@
 			<groupId>dom4j</groupId>
 			<artifactId>dom4j</artifactId>
 			<version>1.6.1</version>
-			</dependency>
-			<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>javax.servlet-api</artifactId>
-    <version>3.0.1</version>
-    <scope>provided</scope>
-</dependency>
-           <dependency>
 		</dependency>
 
 		<dependency>
@@ -125,28 +115,13 @@
 			<artifactId>commons-collections</artifactId>
 			<version>3.2.1</version>
 		</dependency>
-		<dependency>
-			<groupId>antlr</groupId>
-			<artifactId>antlr</artifactId>
-			<version>2.7.7</version>
-		</dependency>
-
-		<!-- Hibernate library dependecy end -->
-
+		
 		<!-- Hibernate library dependecy end -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.6.1</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
-</dependency>
-		
-			</dependencies>
 		<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-framework-bom</artifactId>
