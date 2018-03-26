@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.pojos.UserRegister;
 
-
 @Controller
 public class MainController {
 
-	@RequestMapping(value="register", method=RequestMethod.POST)
-	public String saveitems(UserRegister ur, Model model) { 
+	@RequestMapping(value = "register", method = RequestMethod.POST)
+	public String saveitems(UserRegister ur, Model model) {
 		Configuration configure = new AnnotationConfiguration().configure();
 		SessionFactory Sf = configure.buildSessionFactory();
 		Session s = Sf.openSession();
@@ -24,7 +23,7 @@ public class MainController {
 		s.beginTransaction().commit();
 		model.addAttribute("msg", "registered sucesss");
 		s.close();
-		return"login";
-	
-}
+		return "login";
+
+	}
 }
