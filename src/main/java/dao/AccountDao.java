@@ -8,8 +8,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name="Reg")
 public class AccountDao {
-	@Id
 	@GeneratedValue
+	@Id
+	
  private String uname;
  public String getUname() {
 		return uname;
