@@ -6,29 +6,63 @@
   <packaging>war</packaging>
   <dependencies>
  <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+  <properties>
+		<spring.version>3.2.13.RELEASE</spring.version>
+	</properties>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/struts/struts -->
 <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
-    <version>4.3.14.RELEASE</version>
+    <groupId>struts</groupId>
+    <artifactId>struts</artifactId>
+    <version>1.2.8</version>
 </dependency>
+		
 <dependency>
+    <groupId>javax.validation</groupId>
+    <artifactId>validation-api</artifactId>
+    <version>1.1.0.Final</version>
+</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>javax.transaction</groupId>
 			<artifactId>jta</artifactId>
 			<version>1.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
-<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+		<!-- <dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2.1-b03</version>
+			<scope>provided</scope>
+		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jsp-api -->
 <dependency>
-    <groupId>javax.servlet.jsp</groupId>
+    <groupId>javax.servlet</groupId>
     <artifactId>jsp-api</artifactId>
-    <version>2.2.1-b03</version>
+    <version>2.0</version>
     <scope>provided</scope>
 </dependency>
-		
+
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
@@ -63,7 +97,6 @@
 			<artifactId>hibernate-commons-annotations</artifactId>
 			<version>3.0.0.ga</version>
 		</dependency>
-		
 		<!-- Hibernate library dependecy start -->
 		<dependency>
 			<groupId>dom4j</groupId>
@@ -79,6 +112,9 @@
     <scope>provided</scope>
 </dependency>
            <dependency>
+		</dependency>
+
+		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
 			<version>1.1.1</version>
@@ -89,7 +125,6 @@
 			<artifactId>commons-collections</artifactId>
 			<version>3.2.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>antlr</groupId>
 			<artifactId>antlr</artifactId>
@@ -98,6 +133,7 @@
 
 		<!-- Hibernate library dependecy end -->
 
+		<!-- Hibernate library dependecy end -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
@@ -111,4 +147,12 @@
 </dependency>
 		
 			</dependencies>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-framework-bom</artifactId>
+            <version>4.0.3.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+	</dependencies>
 </project>

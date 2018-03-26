@@ -8,13 +8,9 @@
 
    <context:component-scan base-package = "controller" />
 
-   <bean id="viewResolver"
-   class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
-      <property name = "prefix"> 
-      <value>/jsp/</value> </property>
-        <property name =  "suffix"> 
-      <value>.jsp</value> 
-  </property>
+   <bean class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name = "prefix" value = "/jsp/" />
+      <property name = "suffix" value = ".jsp" />
    </bean>
-
+<bean id="registerDao" class="com.dao.RegisterDao"></bean>
 </beans>
