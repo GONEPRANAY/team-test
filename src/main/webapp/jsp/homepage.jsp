@@ -30,6 +30,7 @@ function register() {
 <form action="">
 <div align="center">${success}</div>
 <div align="center">${tellme}</div>
+${msg2}
 <div class="topleft">
 <input type="button" onclick="login()" value="LOGIN"/>
 </div>
