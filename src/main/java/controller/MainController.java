@@ -21,9 +21,9 @@ public class MainController {
 		Session s = Sf.openSession();
 		s.save(ur);
 		s.beginTransaction().commit();
-		model.addAttribute("msg", "registered sucesss");
+		model.addAttribute("msg2", "registered sucesss");
 		s.close();
-		return "login";
+		return "homepage";
 
 	}
 }
